@@ -1,0 +1,122 @@
+html, body, #unos, #prijelom {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+html {
+    overflow: hidden;
+}
+body {
+    display: flex;
+    align-items: stretch;
+    --accent-color: #0ce;
+    --accent-color-hover: #ec0;
+    --light-background: #f8f8f8;
+    --dark-background: #333;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: var(--dark-background); 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--accent-color); 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #0cd; 
+  }
+
+#unos, #txt {
+    border: 0;
+    background-color: var(--dark-background);
+    color: var(--light-background);
+    font: normal normal 13px/1.6em 'Roboto Condensed', Verdana, sans-serif;
+    letter-spacing: .1em;
+    padding: 1em;
+    overflow: auto;
+}
+#unos {
+    height: calc(100% - 2em);
+    width: 33.333%;
+    min-width: 250px;
+    /* resize: horizontal; */
+    flex: 1;
+}
+#unos fieldset {
+    border-color: var(--accent-color);
+    border-width: .5px;
+    margin: 1em 0;
+    padding: 1em;
+}
+#unos fieldset.accent {
+    background-color: #056; 
+}
+#unos input:not(*[type="checkbox"]), #unos select {
+    background-color: transparent;
+    border: 0;
+    color: var(--accent-color);
+    width: 50px;
+    margin-right: 1em;
+    margin-bottom: .5em;
+}
+#unos input:not(*[type="checkbox"]):last-of-type, #unos select {
+    margin-bottom: 0;
+    margin-right: 0;
+}
+
+#unos select {
+    width: 100px;
+}
+#unos input:focus, #unos select:focus {
+    color: var(--accent-color-hover);
+    background-color: #555;
+    border: 0;
+}
+#unos fieldset:first-of-type {
+    padding: 0;
+}
+#txt {
+    width: calc(100% - 3em);
+    overflow: hidden;
+    resize: vertical;
+    min-height: 200px;
+}
+#unos input[type="reset"], #unos input[type="submit"] {
+    background-color: #056;
+    color: var(--light-background);
+    width: 100px;
+    padding: .5em;
+}
+#unos input[type="reset"]:hover, #unos input[type="submit"]:hover {
+    background-color: var(--accent-color);
+    color: var(--dark-background);
+}
+#unos .submitButtons {
+    display: flex;
+    justify-content: center;
+}
+#unos .submitButtons input {
+    margin-bottom: 0;
+} 
+
+#prijelom {
+    flex: 3;
+    background-color: var(--light-background);
+}
+#prijelom #prikaz {
+    width: 100%;
+}
+
+
+
+
+

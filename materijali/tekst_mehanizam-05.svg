@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 499.8 568" style="enable-background:new 0 0 499.8 568;" xml:space="preserve">
+<style type="text/css">
+	.st0{display:none;}
+	.st1{display:inline;}
+	.st2{fill:none;stroke:#4D4D4D;stroke-width:10;stroke-miterlimit:10;}
+	.st3{fill:none;stroke:#00CCDD;stroke-width:2.5;stroke-miterlimit:10;}
+	.st4{fill:#00CCDD;}
+	.st5{fill:#333333;}
+	.st6{fill:none;stroke:#EFEFEF;stroke-miterlimit:10;}
+	.st7{fill:none;stroke:#00CCDD;stroke-miterlimit:10;}
+	.st8{fill:#EFEFEF;}
+	.st9{display:inline;fill:#1B1464;}
+	.st10{fill:none;stroke:#FFCC00;stroke-miterlimit:10;}
+	.st11{display:none;fill:#1B1464;}
+	.st12{fill:#FFCC00;}
+	.st13{font-family:'Georgia';}
+	.st14{font-size:12px;}
+	.st15{fill:none;stroke:#FFFFFF;stroke-miterlimit:10;}
+	.st16{fill:none;stroke:#FFFFFF;stroke-miterlimit:10;stroke-dasharray:6.1739,6.1739;}
+</style>
+<g id="Layer_1" class="st0">
+</g>
+<g id="Layer_2" class="st0">
+</g>
+<g id="Layer_3" class="st0">
+</g>
+<g id="Layer_4" class="st0">
+</g>
+<g id="Layer_5">
+	<rect y="0" class="st11" width="543.8" height="621"/>
+	<g>
+		<text transform="matrix(1 0 0 1 69.667 30)" class="st12 st13 st14">Story</text>
+		<text transform="matrix(1 0 0 1 18.75 61)" class="st12 st13 st14">textBoxes[]</text>
+		<text transform="matrix(1 0 0 1 18.75 91)" class="st12 st13 st14">includeTextBox()</text>
+		<rect x="9.7" y="10.5" class="st6" width="147.5" height="92.5"/>
+		<line class="st15" x1="9.7" y1="41" x2="157.8" y2="41"/>
+		<g>
+			<g>
+				<line class="st15" x1="9.8" y1="71.5" x2="12.8" y2="71.5"/>
+				<line class="st16" x1="18.9" y1="71.5" x2="151.7" y2="71.5"/>
+				<line class="st15" x1="154.8" y1="71.5" x2="157.8" y2="71.5"/>
+			</g>
+		</g>
+	</g>
+	<g>
+		<text transform="matrix(1 0 0 1 229.8506 30)" class="st12 st13 st14">TextBox</text>
+		<text transform="matrix(1 0 0 1 186.75 61)"><tspan x="0" y="0" class="st12 st13 st14">x</tspan><tspan x="0" y="15" class="st12 st13 st14">y</tspan><tspan x="0" y="30" class="st12 st13 st14">width</tspan><tspan x="0" y="45" class="st12 st13 st14">height</tspan><tspan x="0" y="60" class="st12 st13 st14">columns</tspan><tspan x="0" y="75" class="st12 st13 st14">gutter</tspan><tspan x="0" y="90" class="st12 st13 st14">paragraphs[]</tspan></text>
+		<text transform="matrix(1 0 0 1 186.75 185)" class="st12 st13 st14">includeParagraph()</text>
+		<rect x="177.8" y="10.5" class="st6" width="147.5" height="189.5"/>
+		<line class="st15" x1="177.7" y1="41" x2="325.8" y2="41"/>
+		<g>
+			<g>
+				<line class="st15" x1="177.8" y1="165.5" x2="180.8" y2="165.5"/>
+				<line class="st16" x1="186.9" y1="165.5" x2="319.7" y2="165.5"/>
+				<line class="st15" x1="322.8" y1="165.5" x2="325.8" y2="165.5"/>
+			</g>
+		</g>
+	</g>
+	<g>
+		<text transform="matrix(1 0 0 1 391.1289 30)" class="st12 st13 st14">Paragraph</text>
+		<text transform="matrix(1 0 0 1 353.75 61)"><tspan x="0" y="0" class="st12 st13 st14">x</tspan><tspan x="0" y="15" class="st12 st13 st14">y</tspan><tspan x="0" y="30" class="st12 st13 st14">style{}</tspan><tspan x="0" y="45" class="st12 st13 st14">rows[]</tspan></text>
+		<text transform="matrix(1 0 0 1 353.75 140)" class="st12 st13 st14">includeRow()</text>
+		<rect x="344.8" y="10.5" class="st6" width="147.5" height="144.5"/>
+		<line class="st15" x1="344.8" y1="41" x2="492.8" y2="41"/>
+		<g>
+			<g>
+				<line class="st15" x1="344.8" y1="120.5" x2="347.8" y2="120.5"/>
+				<line class="st16" x1="353.9" y1="120.5" x2="486.7" y2="120.5"/>
+				<line class="st15" x1="489.8" y1="120.5" x2="492.8" y2="120.5"/>
+			</g>
+		</g>
+	</g>
+	<g>
+		<text transform="matrix(1 0 0 1 71.8818 140)" class="st12 st13 st14">Row</text>
+		<text transform="matrix(1 0 0 1 18.75 171)"><tspan x="0" y="0" class="st12 st13 st14">x</tspan><tspan x="0" y="15" class="st12 st13 st14">y</tspan><tspan x="0" y="30" class="st12 st13 st14">offset</tspan><tspan x="0" y="45" class="st12 st13 st14">width</tspan><tspan x="0" y="60" class="st12 st13 st14">letterSpacing</tspan><tspan x="0" y="75" class="st12 st13 st14">words[]</tspan></text>
+		<text transform="matrix(1 0 0 1 18.75 274)"><tspan x="0" y="0" class="st12 st13 st14">includeWord()</tspan><tspan x="0" y="15" class="st12 st13 st14">getWidth()</tspan></text>
+		<rect x="9.8" y="120.5" class="st6" width="147.5" height="182"/>
+		<line class="st15" x1="9.7" y1="151" x2="157.8" y2="151"/>
+		<g>
+			<g>
+				<line class="st15" x1="9.8" y1="256.5" x2="12.8" y2="256.5"/>
+				<line class="st16" x1="18.9" y1="256.5" x2="151.7" y2="256.5"/>
+				<line class="st15" x1="154.8" y1="256.5" x2="157.8" y2="256.5"/>
+			</g>
+		</g>
+	</g>
+	<g>
+		<text transform="matrix(1 0 0 1 236.7588 237)" class="st12 st13 st14">Word</text>
+		<text transform="matrix(1 0 0 1 186.75 268)"><tspan x="0" y="0" class="st12 st13 st14">x</tspan><tspan x="0" y="15" class="st12 st13 st14">width</tspan><tspan x="0" y="30" class="st12 st13 st14">syllables[]</tspan></text>
+		<text transform="matrix(1 0 0 1 186.75 362)"><tspan x="0" y="0" class="st4 st13 st14">splitIntoSyllables()</tspan><tspan x="0" y="15" class="st12 st13 st14">getWidth()</tspan></text>
+		<rect x="177.8" y="217.5" class="st6" width="147.5" height="169"/>
+		<line class="st15" x1="177.7" y1="248" x2="325.8" y2="248"/>
+		<g>
+			<g>
+				<line class="st15" x1="177.8" y1="341.5" x2="180.8" y2="341.5"/>
+				<line class="st16" x1="186.9" y1="341.5" x2="319.7" y2="341.5"/>
+				<line class="st15" x1="322.8" y1="341.5" x2="325.8" y2="341.5"/>
+			</g>
+		</g>
+	</g>
+	<g>
+		<text transform="matrix(1 0 0 1 397.9961 191)" class="st12 st13 st14">Syllable</text>
+		<text transform="matrix(1 0 0 1 353.75 222)"><tspan x="0" y="0" class="st12 st13 st14">x</tspan><tspan x="0" y="15" class="st12 st13 st14">width</tspan><tspan x="0" y="30" class="st12 st13 st14">characters[]</tspan><tspan x="0" y="45" class="st12 st13 st14">isHyphenated</tspan></text>
+		<text transform="matrix(1 0 0 1 353.75 316)"><tspan x="0" y="0" class="st12 st13 st14">includeCharacter()</tspan><tspan x="0" y="15" class="st12 st13 st14">getWidth()</tspan></text>
+		<rect x="344.8" y="171.5" class="st6" width="147.5" height="169"/>
+		<line class="st15" x1="344.8" y1="202" x2="492.8" y2="202"/>
+		<g>
+			<g>
+				<line class="st15" x1="344.8" y1="295.5" x2="347.8" y2="295.5"/>
+				<line class="st16" x1="353.9" y1="295.5" x2="486.7" y2="295.5"/>
+				<line class="st15" x1="489.8" y1="295.5" x2="492.8" y2="295.5"/>
+			</g>
+		</g>
+	</g>
+	<g>
+		<text transform="matrix(1 0 0 1 58.7461 338)" class="st12 st13 st14">Character</text>
+		<text transform="matrix(1 0 0 1 19.75 369)"><tspan x="0" y="0" class="st12 st13 st14">x</tspan><tspan x="0" y="15" class="st12 st13 st14">y</tspan><tspan x="0" y="30" class="st12 st13 st14">glyph</tspan><tspan x="0" y="45" class="st12 st13 st14">width</tspan><tspan x="0" y="60" class="st12 st13 st14">style{}</tspan></text>
+		<text transform="matrix(1 0 0 1 19.75 462)" class="st12 st13 st14">calculateWidth()</text>
+		<rect x="10.8" y="318.5" class="st6" width="147.5" height="156"/>
+		<line class="st15" x1="10.7" y1="349" x2="158.8" y2="349"/>
+		<g>
+			<g>
+				<line class="st15" x1="10.8" y1="442.5" x2="13.8" y2="442.5"/>
+				<line class="st16" x1="19.9" y1="442.5" x2="152.7" y2="442.5"/>
+				<line class="st15" x1="155.8" y1="442.5" x2="158.8" y2="442.5"/>
+			</g>
+		</g>
+	</g>
+</g>
+<script type="text/javascript">
+	// <![CDATA[
+	window.onload = function() {
+		const svg = document.getElementsByTagName("svg")[0];
+		const x = svg.viewBox.baseVal.x;
+		let y = svg.viewBox.baseVal.y;
+		const w = svg.viewBox.baseVal.width;
+		const h = svg.viewBox.baseVal.height;
+		window.addEventListener("wheel", function(e) {
+			y = y + e.deltaY / 10;
+			y = y < 0 ? 0 : y;
+			y = y > h / 1.5 ? h / 1.5 : y;
+			svg.setAttribute("viewBox", `${x} ${y} ${w} ${h}`);
+		});
+	}
+	// ]]>
+</script>
+</svg>

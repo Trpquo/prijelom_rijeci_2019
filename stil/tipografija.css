@@ -1,0 +1,284 @@
+﻿@font-face {
+    font-family: 'serifni';
+    src: url('../materijali/pisma/LeituraNews-Roman 2.otf') format('opentype');
+}
+@font-face {
+    font-family: 'serifni';
+    src: url('../materijali/pisma/LeituraNews-Roman 4.otf') format('opentype');
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'besserifni';
+    src: url('../materijali/pisma/LeituraSans-Grot 2.otf') format('opentype');
+}
+@font-face {
+    font-family: 'besserifni';
+    src: url('../materijali/pisma/LeituraSans-Italic 2.otf') format('opentype');
+    font-style: italic;
+}
+@font-face {
+    font-family: 'besserifni';
+    src: url('../materijali/pisma/LeituraSans-Grot 4.otf') format('opentype');
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'besserifni';
+    src: url('../materijali/pisma/LeituraSans-Italic 4.otf') format('opentype');
+    font-style: italic;
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'masni';
+    src: url('../materijali/pisma/LeituraHeadline-Sans.otf') format('opentype');
+}
+@font-face {
+    font-family: 'krasni';
+    src: url('../materijali/pisma/LeituraDisplay-Swashes.otf') format('opentype');
+}
+@font-face {
+    font-family: 'ukrasni';
+    src: url('../materijali/pisma/LeituraSymbols-Arrows.otf') format('opentype');
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+/* osnovni stil */
+
+body {
+    font: normal normal 24px/1.3em  besserifni, Verdana, sans-serif;
+    word-spacing: .05em;
+    letter-spacing: .015em;
+    background: var(--background-color);
+    color:var(--text-color);
+}
+
+
+
+
+/* naslovi */
+
+.otvorniNaslov {
+    font-weight: bold;
+    font-size: 3.5vw;
+    line-height: 1.2em;
+    color: var(--accent-color);
+    position: absolute;
+    bottom: 5%;
+    max-width: calc(100% - 120px);
+}
+.otvorniNaslov .eng {
+    color: var(--accent-background-color);
+    font-size: 2.5vw;
+    line-height: 1.2em;
+    margin-top: .5em;
+}
+
+h1, h2, h3, h4 {
+    position: relative;
+    margin: 0 0 1em;
+    letter-spacing: .08em;
+    word-spacing: -.1em;
+    /*z-index: -200;*/
+}
+h4 {
+    color: var(--accent-color);
+    margin-bottom: 2em;
+}
+h1 {
+    font-size: 1.2em;
+}
+h1 span {
+    display: inline-block;
+    word-break: keep-all;
+    min-width: 10em;
+}
+h1 small {
+    color: var(--text-color);
+    font-size: .618em;
+}
+h1 .običanTekst {
+    font: normal normal 18px/1.3em  besserifni, Verdana, sans-serif;
+    color: var(--separator-color);
+    /*text-transform: lowercase;*/
+}
+.krepak {
+    font-weight: normal;
+    color: var(--text-color);
+}
+.masni {
+    font-size: 1.7em;
+    font-family: masni, besserifni, sans-serif;
+}
+.poanta {
+    font-family: serifni;
+    font-weight: bold;
+    font-size: 1.75em;
+}
+.zrno {
+    font-family: besserifni;
+    font-weight: bold;
+    font-size: 1em;
+    margin: 0 .25em;
+    color: var(--accent-color);
+}
+.flah {
+    color: var(--accent-background-color);
+}
+.brojćek {
+    font-family: ukrasni;
+    color: var(--accent-color2);
+}
+code, .accent {
+    color: var(--accent-color);
+}
+.accent2 {
+    color: var(--separator-color);
+}
+.središnji {
+    font-size: 1.25em;
+    font-weight: bold;
+    margin-top: 4em;
+    text-align: center;
+}
+.kardinal {
+    font-family: krasni;
+    font-size: 3em;
+    text-align: center;
+    margin: 5em 0 .5em;
+}
+.kardinal + p {
+    text-align: center;
+    margin-left: -.5em;
+}
+.zatvor {
+    width: 20%;
+    font-family: serifni, serif;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    text-align: center;
+    border-bottom: 4px solid var(--accent-color);
+}
+
+/* tekst */
+hr {
+    width: 25%;
+    display: inline-block;
+    margin-top: .5em;
+}
+p, blockquote, h1, h2, h3, h4 {
+    width: 100%;
+}
+
+a {
+    font-family: serifni, serif;
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 1s ease-in;
+}
+a.uklopljena {
+    font-family: besserifni, sans-serif;
+}
+h4 a {
+    font-family: besserifni, sans-serif;
+}
+a:hover {
+    font-style: italic;
+    color: var(--accent-color);
+}
+.uvlaka {
+    margin-left: 1em;
+}
+
+/* liste i podliste */
+ul {
+    list-style-type: none;
+    padding-top: .25em;
+}
+
+.dvojna-lista {
+    display: block;
+    width: 35%;
+    margin: 8em 1em;
+    float: left;
+}
+
+.trojna-lista {
+    display: block;
+    width: 22%;
+    margin: 8em 1em;
+    float: left;
+}
+table.tri-stupca {
+    margin-top: 3em;
+    font-size: .8em;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.tri-stupca td, .tri-stupca th {
+    padding: .35em 3em .35em .35em;
+    vertical-align: text-top;
+    text-align: left;
+    border-bottom: 1px solid var(--separator-color);
+    
+}
+.tri-stupca tr:hover {
+    background: #eaeaea;
+}
+.tri-stupca td:empty {
+    background: var(--background-color);
+    border-bottom: 0;
+}
+.tri-stupca tr:last-child td {
+    border-bottom: 0;
+}
+td.zasebni {
+    border-bottom: 1px solid var(--separator-color);
+    border-top: 3px solid var(--separator-color);
+}
+
+#onOffScript {
+    padding: 1em 1.5em;
+    font-weight: bold;
+    color: var(--text-color);
+    background-color: #222;
+    border: none;
+    border-radius: 1em;
+    transition: .5s;
+    width: 6em;
+    letter-spacing: .1em;
+    position: absolute;
+    bottom: 5%;
+    right: 8%;
+}
+#onOffScript.on {
+    background-color: var(--accent-color2);
+}
+
+/* slikovni potpisi */
+
+.cijeliEkran figcaption {
+    font-family: serifni, serif;
+    margin-top: .5em;
+    font-size: .85em;
+    display: block;
+    width: 100%;
+}
+
+/* navigacija broja vježbe */
+.navigacija {
+    position: absolute;
+    bottom: 0;
+    right: -120px;
+}
+.prije, .poslije {
+    font-family: ukrasni;
+    font-weight: bold !important;
+    cursor: pointer;
+}
+.prije:hover, .poslije:hover {
+    font-style: normal !important;
+}
+

@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+        <link href="stil.css" rel="stylesheet" />
+    </head>
+    <body>
+            <form id="unos" novalidate>
+                <fieldset>
+                    <textarea name="txt" id="txt">Prijelom: dio grafičke pripreme u kojem se složeni tekst i ilustracije spajaju u cjelinu, odnosno definira se konačni izgled pojedinih stranica i grafičkoga proizvoda u cjelini (osnutak). Obuhvaća određivanje točnog položaja i veličine pojedinih ilustracija, grafičkih elemenata (pozadina, obrubi, osjenčanja, linije i dr.), margina, podnožja i zaglavlja stranica, veličine i vrste pisma pojedinih dijelova teksta, razmaka među slovima i redcima i dr. Obično prethodi maloj ili velikoj montaži, kojima se izrađuju folije ili filmovi, kao dijelovima pripreme tiskovnih formi. U današnje doba prijelom se u pravilu obavlja uz pomoć računala i posebnih primjenskih programa (npr. Adobe InDesign, QuarkXPress), a sastavni je dio stolnog izdavaštva.</textarea>
+                </fieldset>
+                <fieldset>
+                        <div>
+                            <label for="ffamily">Pismo</label>
+                            <select name="ffamily" id="ffamily">
+                                <option value="Georgia" selected>Georgia</option>
+                                <option value="Roboto Condensed">Roboto</option>
+                                <option value="Comic Sans MS">Comic Sans</option>
+                                <option value="monospace">Typewriter</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="fsize">Pismovna veličina</label>
+                            <input type="number" name="fsize" id="fsize" min="2" max="200" value="16">
+                        </div>
+                        <div>
+                            <label for="flead">Prored</label>
+                            <input type="text" name="flead" id="flead" value="1.6">
+                        </div>
+                        <div>
+                            <label for="txtAlign">Poravnanje</label><br>
+                            <input type="radio" name="txtAlign" id="txtAlign" value="left" checked> 
+                            <input type="radio" name="txtAlign" id="txtAlign" value="center"> 
+                            <input type="radio" name="txtAlign" id="txtAlign" value="right"> 
+                            <input type="radio" name="txtAlign" id="txtAlign" value="justify"> 
+                        </div>
+                    </fieldset>
+                <fieldset>
+                    <div>
+                        <label for="indent">Uvlaka</label>
+                        <input type="number" name="indent" id="indent" min="1" max="100" value="16">
+                    </div>
+                    <div>
+                        <label for="cols">Broj kolumni</label>
+                        <input type="number" name="cols" id="cols" min="1" max="6" value="3">
+                    </div>
+                    <div>
+                        <label for="gutter">Širina kanalica</label>
+                        <input type="number" name="gutter" id="gutter" min="5" max="100" value="32">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div>
+                        <label for="wdth">Širina</label>
+                        <input type="text" name="wdth" id="wdth" value="85%">
+                    </div>
+                    <div>
+                        <label for="hght">Visina</label>
+                        <input type="text" name="hght" id="hght" value="50%">
+                    </div>
+                    <!-- dodati opciju za relativne vrijednosti kada se upiše znak za postotak -->
+                </fieldset>
+                <fieldset class="accent">
+                    <div>
+                        <input type="checkbox" name="hyphenate" id="hyphenate">
+                        <label for="hyphenate">Prijelom riječi</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div>
+                        <input type="checkbox" name="showGrid" id="showGrid">
+                        <label for="showGrid">Prikaži rešetku</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="drawFrame" id="drawFrame">
+                        <label for="drawFrame">Prikaži okvir</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="higlightWords" id="higlightWords">
+                        <label for="higlightWords">Naznači riječi</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="highlightRidge" id="highlightRidge">
+                        <label for="highlightRidge">Naznači rubove</label>
+                    </div>
+                </fieldset>
+                <div class="submitButtons">
+                    <input type="reset" value="Poništi">
+                    <input type="submit" value="Prelomi">
+                </div>
+            </form>
+            <figure id="prijelom">
+                <canvas id="prikaz"></canvas>
+            </figure>
+        <script src="algoritam.js"></script>
+        <script src="gramaticalUnits.js"></script>
+        <script src="textBox.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>

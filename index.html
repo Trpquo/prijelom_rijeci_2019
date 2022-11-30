@@ -1,0 +1,209 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Trpimir Jeronim Ježić" />
+
+    <link rel="stylesheet" type="text/css" href="stil/osnovni-prijelom.css" />
+    <link rel="stylesheet" type="text/css" href="stil/tipografija.css" />
+    <link href="stil/colorbox.css" rel="stylesheet" />
+
+    <script src="pogon/html2canvas.js"></script>
+    <script src="pogon/jquery-1.11.2.min.js"></script>
+    <script src="pogon/jquery.colorbox-min.js"></script>
+
+    <title>
+       TiD 2019: Ježić, Pap, Mikota
+    </title>
+
+    <style>
+        #probni {
+            word-wrap: word-break;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <article id="vježba1">
+            <section>
+                <h1 class="otvorniNaslov">
+                    <span>Razvoj skripte za automatski prijelom riječi na kraju retka u suvremenim web pretraživačima</span><br />
+                    <span class="eng">Development of hyphenation script for automatic text layout in modern web browsers</span><br />
+                    <small>Ježić, Pap, Mikota</small><br />
+                    <span id="brojVježbe" class="običanTekst">&mdash; TiD 2019</span>
+                </h1>
+            </section>
+            <section>
+               <h4><span class="krepak">prijelom redaka i</span> čitkost</h4>
+               <figure>
+                   <embed src="materijali/citkost-redaka-01.svg" width="100%" height="100%"></embed>
+                   <figcaption></figcaption>
+               </figure>
+            </section>
+            <section>
+                <h4>standardne <span class="krepak"> mogućnosti poravnanja u pretraživačima</span></h4>
+                <div class="quadriptih">
+                    <div>
+                        <figure>
+                            <figcaption>text-align: <span class="accent">left</span></figcaption><br>
+                            <p><small>Prijelom: dio grafičke pripreme u kojem se složeni tekst i ilustracije spajaju u cjelinu, odnosno definira se konačni izgled pojedinih stranica i grafičkoga proizvoda u cjelini (osnutak). Obuhvaća određivanje točnog položaja i veličine dijelova teksta.</small></p>
+                        </figure>
+                    </div>
+                    <div>
+                        <figure>
+                            <figcaption>text-align: <span class="accent">center</span></figcaption><br>
+                            <p style="text-align: center"><small>Prijelom: dio grafičke pripreme u kojem se složeni tekst i ilustracije spajaju u cjelinu, odnosno definira se konačni izgled pojedinih stranica i grafičkoga proizvoda u cjelini (osnutak). Obuhvaća određivanje točnog položaja i veličine dijelova teksta.</small></p>
+                        </figure>
+                    </div>
+                    <div>
+                        <figure>
+                            <figcaption>text-align: <span class="accent">right</span></figcaption><br>
+                            <p style="text-align: right"><small>Prijelom: dio grafičke pripreme u kojem se složeni tekst i ilustracije spajaju u cjelinu, odnosno definira se konačni izgled pojedinih stranica i grafičkoga proizvoda u cjelini (osnutak). Obuhvaća određivanje točnog položaja i veličine dijelova teksta.</small></p>
+                        </figure>
+                    </div>
+                    <div>
+                        <figure>
+                            <figcaption>text-align: <span class="accent">justify</span></figcaption><br>
+                            <p style="text-align: justify"><small>Prijelom: dio grafičke pripreme u kojem se složeni tekst i ilustracije spajaju u cjelinu, odnosno definira se konačni izgled pojedinih stranica i grafičkoga proizvoda u cjelini (osnutak). Obuhvaća određivanje točnog položaja i veličine dijelova teksta.</small></p>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h4><span class="krepak"> mogućnosti poravnanja u pretraživačima</span> po radnom nacrtu CSS3 specifikacije</h4>
+                <p>
+                    word-wrap: <span class="accent">break-word</span>;<br>
+                    hyphens: <span class="accent">auto</span>;
+                </p>
+                <div class="quadriptih" style="word-wrap: break-word; hyphens: auto;">
+                        <div>
+                            <figure>
+                                <figcaption>text-align: <span class="accent">left</span></figcaption><br>
+                                <p><small>Prijelom: dio grafičke pripreme u kojem se <span class="accent2">iznimnodugačkesloženeriječi</span> lome u novi redak, odnosno definira se konačni izgled pojedinih stranica i grafičkoga proizvoda u cjelini (osnutak). Obuhvaća određivanje točnog položaja i veličine dijelova teksta.</small></p>
+                            </figure>
+                        </div>
+                        <div>
+                            <figure>
+                                <figcaption>text-align: <span class="accent">center</span></figcaption><br>
+                                <p style="text-align: center"><small>Prijelom: dio grafičke pripreme u kojem se <span class="accent2">iznimnodugačkesloženeriječi</span> lome u novi redak, odnosno definira se konačni izgled pojedinih stranica i grafičkoga proizvoda u cjelini (osnutak). Obuhvaća određivanje točnog položaja i veličine dijelova teksta.</small></p>
+                            </figure>
+                        </div>
+                        <div>
+                            <figure>
+                                <figcaption>text-align: <span class="accent">right</span></figcaption><br>
+                                <p style="text-align: right"><small>Prijelom: dio grafičke pripreme u kojem se <span class="accent2">iznimnodugačkesloženeriječi</span> lome u novi redak, odnosno definira se konačni izgled pojedinih stranica i grafičkoga proizvoda u cjelini (osnutak). Obuhvaća određivanje točnog položaja i veličine dijelova teksta.</small></p>
+                            </figure>
+                        </div>
+                        <div>
+                            <figure>
+                                <figcaption>text-align: <span class="accent">justify</span></figcaption><br>
+                                <p style="text-align: justify"><small>Prijelom: dio grafičke pripreme u kojem se <span class="accent2">iznimnodugačkesloženeriječi</span> lome u novi redak, odnosno definira se konačni izgled pojedinih stranica i grafičkoga proizvoda u cjelini (osnutak). Obuhvaća određivanje točnog položaja i veličine dijelova teksta.</small></p>
+                            </figure>
+                        </div>
+                    </div>
+            </section>
+            <section>
+                <h4>jednostavan <span class="krepak"> prijelom redaka</span></h4>
+                <figure>
+                    <embed src="materijali/jednostavan_hodogram-02.svg" width="100%" height="100%"></embed>
+                    <figcaption></figcaption>
+                </figure>
+            </section>
+            <section>
+                <h4><span class="krepak">algoritam</span> za prijelomom riječi <span class="krepak">na slogove</span></h4>
+                <figure>
+                    <embed src="materijali/algoritam_loma-04.svg" width="100%" height="100%" scrolling="yes" style="overflow: auto;"></embed>
+                    <figcaption></figcaption>
+                </figure>
+            </section>
+            <section>
+                <h4><span class="krepak">prijelom teksta</span> sa prijelomom riječi <span class="krepak">na krajevima redaka</span></h4>
+                <figure>
+                    <embed src="materijali/hodogram_sa_lomom-03.svg" width="100%" height="100%" scrolling="yes" style="overflow: auto;"></embed>
+                    <figcaption></figcaption>
+                </figure>
+            </section>
+            <section>
+                    <h4><span class="krepak"> mogućnosti poravnanja</span> sa skriptom za prijelom riječi na kraju redaka</h4>
+
+                    <div id="skriptaOnOff" class="quadriptih" style="word-wrap: break-word; hyphens: auto;">
+                            <div>
+                                <figure>
+                                    <figcaption>text-align: <span class="accent">left</span></figcaption><br>
+                                    <p><small>Prijelom: dio grafičke pripreme u kojem se <span class="accent2">iznimnodugačkesloženeriječi</span> lome u novi redak, odnosno definira se konačni izgled pojedinih stranica i grafičkoga proizvoda u cjelini (osnutak). Obuhvaća određivanje točnog položaja i veličine dijelova teksta.</small></p>
+                                </figure>
+                            </div>
+                            <div>
+                                <figure>
+                                    <figcaption>text-align: <span class="accent">center</span></figcaption><br>
+                                    <p style="text-align: center"><small>Prijelom: dio grafičke pripreme u kojem se <span class="accent2">iznimnodugačkesloženeriječi</span> lome u novi redak, odnosno definira se konačni izgled pojedinih stranica i grafičkoga proizvoda u cjelini (osnutak). Obuhvaća određivanje točnog položaja i veličine dijelova teksta.</small></p>
+                                </figure>
+                            </div>
+                            <div>
+                                <figure>
+                                    <figcaption>text-align: <span class="accent">right</span></figcaption><br>
+                                    <p style="text-align: right"><small>Prijelom: dio grafičke pripreme u kojem se <span class="accent2">iznimnodugačkesloženeriječi</span> lome u novi redak, odnosno definira se konačni izgled pojedinih stranica i grafičkoga proizvoda u cjelini (osnutak). Obuhvaća određivanje točnog položaja i veličine dijelova teksta.</small></p>
+                                </figure>
+                            </div>
+                            <div>
+                                <figure>
+                                    <figcaption>text-align: <span class="accent">justify</span></figcaption><br>
+                                    <p style="text-align: justify"><small>Prijelom: dio grafičke pripreme u kojem se <span class="accent2">iznimnodugačkesloženeriječi</span> lome u novi redak, odnosno definira se konačni izgled pojedinih stranica i grafičkoga proizvoda u cjelini (osnutak). Obuhvaća određivanje točnog položaja i veličine dijelova teksta.</small></p>
+                                </figure>
+                            </div>
+                            <p style="text-align: right">
+                                <button id="onOffScript">off</button>
+                            </p>
+                        </div>
+                </section>
+            <section>
+                <h4>problemi <span class="krepak">sa ovakvom jednostavnom skriptom</span></h4>
+                <div>
+                    <ul>
+                        <li>skripta nije responzivna
+                            <ul>
+                                <li><small>nanovo izvršava cijeli račun sa svakom promjenom spremnika</small></li>
+                            </ul>
+                        </li>
+                        <br>
+                        <li>tekst gubi semantičku valjanost</li>
+                                    <ul>
+                                        <li><small>search / find, searchbot-i</small></li>
+                                        <li><small>copy / paste</small></li>
+                                    </ul>
+                    </ul>
+                    <br style="clear: both">
+                </div>
+            </section>
+            <section>
+                <h4><span class="krepak">prijelom teksta</span> <a href="aplikacija/index.html" target="_blank">novim tekstovnim mehanizmom</a> <span class="krepak">za lomljenje riječi</span></h4>
+                <figure>
+                    <embed src="materijali/tekst_mehanizam-05.svg" width="100%" height="100%" scrolling="yes" style="overflow: auto;"></embed>
+                    <figcaption></figcaption>
+                </figure>
+            </section>
+            <section>
+                <p class="središnji" style="margin-top: 20%;">
+                    <span class="zrno">&raquo;</span>
+                    <a class="cb" href="./aplikacija/index.html">testna aplikacija</a>
+                    <span class="zrno">&laquo;</span>
+                </p>
+            </section>
+            <section>
+                <p class="zatvor">Hvala na pažnji</p>
+            </section>
+        </article>
+
+        
+        
+    </main>
+
+    <canvas id="kursor" width="100" height="300"></canvas>
+    <script src="pogon/kursorCanvas.js"></script>
+    <script src="pogon/ilustracije.js"></script>
+    <script src="pogon/navigacija.js"></script>
+</body>
+
+</html>
